@@ -5,16 +5,16 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let numb1 = 10;
-let numb2 = 30;
+// let numb1 = 10;
+// let numb2 = 30;
 
-if (numb1 > numb2) {
-    console.log('il numero più grande è :' + numb1)
-} else if (numb2 > numb1) {
-    console.log('il numero più grande è :' + numb2)
-} else {
-    console.log('i numeri sono uguali!')
-}
+// if (numb1 > numb2) {
+//   console.log('il numero più grande è :' + numb1)
+// } else if (numb2 > numb1) {
+//   console.log('il numero più grande è :' + numb2)
+// } else {
+//   console.log('i numeri sono uguali!')
+// }
 
 
 /*
@@ -29,19 +29,21 @@ ESERCIZIO 2
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let num = 12;
+// let num = 12;
 
-if (num < 5) {
-    console.log('Tiny')
-} else if (num < 10) {
-    console.log('Small')
-} else if (num < 15) {
-    console.log('Medium')
-} else if (num < 20) {
-    console.log('Large')
-} else if (num >= 20) {
-    console.log('Huge')
-}
+// if (num < 5) {
+//   console.log('Tiny')
+// } else if (num < 10) {
+//   console.log('Small')
+// } else if (num < 15) {
+//   console.log('Medium')
+// } else if (num < 20) {
+//   console.log('Large')
+// } else if (num >= 20) {
+//   console.log('Huge')
+// } else {
+//   console.log('Something is wrong')
+// }
 
 //ESERCIZI SUI CICLI:
 
@@ -50,25 +52,25 @@ if (num < 5) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-for (let i = 0; i <= 10; i++) {
-    if (i === 3 || i === 8) {
-        continue;
-    }
-    console.log(i);
-}
+// for (let i = 0; i <= 10; i++) {
+//   if (i === 3 || i === 8) {
+//     continue;
+//   }
+//   console.log(i);
+// }
 
 /* ESERCIZIO 11
   Scrivi un ciclo in JavaScript per iterare da 0 a 15. Per ciascun elemento, il ciclo deve controllare the il valore corrente sia pari o dispari, e mostrare il risultato in console.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-for (i = 0; i <= 15; i++) {
-    if (i % 2 === 0) {
-        console.log('numero pari: ' + i)
-    } else {
-        console.log('numero dispari: ' + i)
-    }
-}
+// for (i = 0; i <= 15; i++) {
+//   if (i % 2 === 0) {
+//     console.log('numero pari: ' + i)
+//   } else {
+//     console.log('numero dispari: ' + i)
+//   }
+// }
 
 //ESERCIZI EXTRA NON OBBLIGATORI
 
@@ -78,6 +80,16 @@ for (i = 0; i <= 15; i++) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+// let numero1 = 7
+// let numero2 = 15
+// let somma = numero1 + numero2
+// let sottrazione = Math.abs(numero1 - numero2)
+// if (numero1 === 8 || numero2 === 8 || somma === 8 || sottrazione === 8) {
+//   console.log('la condizione è vera')
+// } else {
+//   console.log('la condizione è falsa')
+// }
+
 /* ESERCIZIO EXTRA 2
 Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
 C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
@@ -86,12 +98,40 @@ Crea un algoritmo che determini l'ammontare totale che deve essere addebitato al
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+// let totalShoppingCart = 80;
+// let shippingCost = 10;
+// let totalAmount;
+
+// if (totalShoppingCart > 50) {
+//   totalAmount = totalShoppingCart
+//   console.log('Invio gratuito')
+// } else {
+//   totalAmount = totalShoppingCart + shippingCost
+//   console.log('Ti viene addebitato: ' + totalShoppingCart + ' e ' + shippingCost + ' per la spedizione')
+// }
+
+// console.log(totalAmount);
 /* ESERCIZIO EXTRA 3
   Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando, usando l'algoritmo del codice precedente, se le spedizioni siano gratuite oppure no e e calcolando il totale.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+// let totalShoppingCart = 400;
+// let shippingCost = 10;
+// let discount = totalShoppingCart * 0.2;
+// let totalAmount = totalShoppingCart - discount;
+
+// if (discount > 50) {
+//   totalAmount = discount
+//   console.log('Invio gratuito')
+// } else {
+//   totalAmount = discount + shippingCost
+//   console.log('Ti viene addebitato: ' + discount + ' per il prodotto ' + 'e ' + shippingCost + ' per la spedizione')
+// }
+
+// console.log(totalAmount);
 
 /*  ESERCIZIO EXTRA 4
   Usa un operatore ternaio per assegnare ad una variabile chiamata "gender" i valori "male" o "female".
@@ -100,6 +140,10 @@ Crea un algoritmo che determini l'ammontare totale che deve essere addebitato al
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+// let isMale = true;
+// let gender = isMale ? 'male' : 'famale'
+// console.log(gender);
 
 /* ESERCIZIO EXTRA 5
   Scrivi un algoritmo che iteri i numeri da 1 a 100, stampandoli in console. Se un valore tuttavia è multiplo di 3 (operatore modulo!), stampa al suo posto la parola "Fizz" e se il numero è multiplo di 5, stampa "Buzz". Se le condizioni si verificano entrambe, stampa "FizzBuzz".
